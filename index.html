@@ -1,0 +1,88 @@
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+    <head>
+        <title>
+            Animal's home icon
+        </title>
+
+        <style>
+            .row{
+                width:720px;
+                margin: 10px auto 10px auto ;
+            }
+            .image-container {
+                display: table-cell;
+                vertical-align: middle;
+                padding:20px;
+            }
+        
+    </style>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
+
+    
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_SharedWithUsers msdt:dt="string">Neroli Wesley;Jumi Suzuki Carpenter;Nguyen Nguyen;Ella Ferraretto;Kelly Ga Yi Xiao;C Lee;Phuong Nguyen;Ka Chen Yeo;Michelle Arlene Tan;Pauline Natasha Latidjan;Evelyn Tjiang</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_SharedWithUsers>
+<mso:SharedWithUsers msdt:dt="string">11;#Neroli Wesley;#16;#Jumi Suzuki Carpenter;#27;#Nguyen Nguyen;#17;#Ella Ferraretto;#15;#Kelly Ga Yi Xiao;#28;#C Lee;#14;#Phuong Nguyen;#13;#Ka Chen Yeo;#26;#Michelle Arlene Tan;#12;#Pauline Natasha Latidjan;#18;#Evelyn Tjiang</mso:SharedWithUsers>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+    
+    <body style="background-color: rgb(20, 50, 74);">
+        
+        <div class="row">
+            <!-- This is a comment. It won't appear in your page -->
+            <!-- This long line contains the code for the image roll 
+                over which swaps in an alternative image. You need to select the extra 
+                code and paste it in for each image. Make sure the page still works after pasting. 
+                Replace the template file names with your own filenames for icons, 
+                the rollover version of icons and sounds.d
+            -->
+
+
+
+            <div class="image-container"><img id="spider" src="img/spider1.png" onmouseover="this.src='img/spider2.png';" onmouseout="this.src='img/spider1.png';" width="200" height="200"/></div>
+            <div class="image-container"><img id="chicken" src="img/chicken1.png" onmouseover="this.src='img/chicken2.png';" onmouseout="this.src='img/chicken1.png';" width="200" height="200"/></div>
+            <div class="image-container"><img id="bee" src="img/bee1.png" onmouseover="this.src='img/bee2.png';" onmouseout="this.src='img/bee1.png';" width="200" height="200"/></div>
+        </div>
+
+        <div class="row">
+            <div class="image-container"><img id="squirrel" src="img/squirrel1.png" onmouseover="this.src='img/squirrel2.png';" onmouseout="this.src='img/squirrel1.png';" width="200" height="200"/></div>
+            <div class="image-container"><img id="panda" src="img/panda1.png" onmouseover="this.src='img/panda2.png';" onmouseout="this.src='img/panda1.png';" width="200" height="200"/></div>
+            <div class="image-container"><img id="fox" src="img/fox1.png" onmouseover="this.src='img/fox2.png';" onmouseout="this.src='img/fox1.png';" width="200" height="200"/></div>
+        </div>
+
+        <div class="row">
+            <div class="image-container"><img id="giraffe" src="img/giraffe1.png" onmouseover="this.src='img/giraffe2.png';" onmouseout="this.src='img/giraffe1.png';" width="200" height="200"/></div>
+            <div class="image-container"><img id="starfish" src="img/starfish1.png" onmouseover="this.src='img/starfish2.png';" onmouseout="this.src='img/starfish1.png';" width="200" height="200"/></div>
+            <div class="image-container"><img id="bird" src="img/bird1.png" onmouseover="this.src='img/bird2.png';" onmouseout="this.src='img/bird1.png';" width="200" height="200"/></div>
+        </div>
+
+        <script>
+            var sound1 = new buzz.sound("sound/spidersound.mp3");
+            var sound2 = new buzz.sound("sound/chicken.mp3");
+            var sound3 = new buzz.sound("sound/beebuzz.mp3");
+            var sound4 = new buzz.sound("sound/squirrel.mp3");
+            var sound5 = new buzz.sound("sound/panda.mp3");
+            var sound6 = new buzz.sound("sound/fox.mp3");
+            var sound7 = new buzz.sound("sound/giraffe.mp3");
+            var sound8 = new buzz.sound("sound/starfish.mp3");
+            var sound9 = new buzz.sound("sound/birdchirp.mp3");
+
+            window.onload = function() {
+                document.getElementById('spider').addEventListener('click', function () {sound1.play();});
+                document.getElementById('chicken').addEventListener('click', function () {sound2.play();});
+                document.getElementById('bee').addEventListener('click', function () {sound3.play();});
+                document.getElementById('squirrel').addEventListener('click', function () {sound4.play();});
+                document.getElementById('panda').addEventListener('click', function () {sound5.play();});
+                document.getElementById('fox').addEventListener('click', function () {sound6.play();}); 
+                document.getElementById('giraffe').addEventListener('click', function () {sound7.play();});
+                document.getElementById('starfish').addEventListener('click', function () {sound8.play();});
+                document.getElementById('bird').addEventListener('click', function () {sound9.play();});
+            };
+        </script>
+
+    </body>
+
+</html>
+
